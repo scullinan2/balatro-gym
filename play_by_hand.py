@@ -10,7 +10,6 @@ observation = env.reset()
 done = False
 while not done:
     print(env.render())
-
     print(env.get_wrapper_attr('valid_actions')())
     action = int(input("Enter action: "))
     obs, reward, done, truncated, info = env.step(action)
